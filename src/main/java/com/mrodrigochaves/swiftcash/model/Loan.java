@@ -32,7 +32,7 @@ public class Loan {
     private int age;
 
     @Column(name = "cpf", nullable = false)
-    private int cpf;
+    private double cpf;
 
     @Column(name = "rg", nullable = false)
     private int rg;
