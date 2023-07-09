@@ -9,14 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mrodrigochaves.swiftcash.model.Loan;
 import com.mrodrigochaves.swiftcash.repository.LoanRepository;
 
+import lombok.AllArgsConstructor;
+
 @RestController
 @RequestMapping("/api/loan")
+@AllArgsConstructor
 public class LoanController {
 
-    private LoanRepository loanRepository;
+    private final LoanRepository loanRepository;
 
     @GetMapping
     public List<Loan> list() {
-        return null;
+        return loanRepository.findAll();
     }
 }
