@@ -16,25 +16,25 @@ public class Loan {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "last_name", nullable = false)
+    @Column(name = "lastName")
     private String lastName;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "phone", nullable = true)
+    @Column(name = "phone")
     private String phone;
 
-    @Column(name = "age", nullable = false)
+    @Column(name = "age")
     private int age;
 
-    @Column(name = "cpf", nullable = false)
+    @Column(name = "cpf")
     private double cpf;
 
-    @Column(name = "rg", nullable = false)
+    @Column(name = "rg")
     private int rg;
 
 }
