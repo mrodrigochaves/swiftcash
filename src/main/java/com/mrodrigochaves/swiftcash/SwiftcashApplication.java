@@ -31,7 +31,7 @@ public class SwiftcashApplication {
 			loan.setRg(12345678);
 			
 
-			loanRepository.save(new Loan());
+			loanRepository.save(loan);
 		};
 	}
 
