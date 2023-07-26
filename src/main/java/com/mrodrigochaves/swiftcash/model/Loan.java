@@ -12,6 +12,12 @@ import lombok.Data;
 @Data
 public class Loan {
     
+    public Loan() {
+    }
+
+    public Loan(long l, String string, String string2, String string3, String string4, int i, long m, int j) {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
